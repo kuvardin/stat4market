@@ -1,0 +1,6 @@
+/vendor
+/.idea
+/logs/*
+/settings.local.php
+/public/index.html
+/cache

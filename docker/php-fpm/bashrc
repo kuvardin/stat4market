@@ -1,0 +1,3 @@
+alias engine="php /var/www/backend/public/index.php"
+alias phinx="/var/www/backend/vendor/bin/phinx"
+alias phpunit="/var/www/backend/vendor/bin/phpunit"
