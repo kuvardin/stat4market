@@ -233,7 +233,7 @@ class Api {
         '<?= $parameter_name ?>': <?= CaseSwitcher::snakeToCamel($parameter_name) ?>,
 <?php endforeach; ?>
     },
-<?php if ($method_class::getResultField()->type === ApiFieldType::Object): ?>
+<?php if ($method_class::getResultField() !== null && $method_class::getResultField()->type === ApiFieldType::Object): ?>
     (Map<String, dynamic> data) => <?= $method_class::getResultField()->getDartType() ?>.fromMap(data)
 <?php else: ?>
     (value) => value
